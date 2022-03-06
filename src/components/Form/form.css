@@ -1,0 +1,21 @@
+.form{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.input-area{
+    margin: 1rem 0;
+    width: 20%;
+}
+
+.submit-button{
+    padding: 0.5rem 1rem;
+    background-color: black;
+    color: #fff;
+}
+
+/*output----------------------*/
+button.copyUrl{
+    background-color: red;
+    color: white;
+}

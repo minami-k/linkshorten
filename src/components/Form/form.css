@@ -1,11 +1,10 @@
 .form{
     text-align: center;
-    margin-top: 5rem;
 }
 
 .input-area{
     margin: 1rem 0;
-    width: 20%;
+    width: 30%;
 }
 
 .submit-button{
@@ -18,4 +17,19 @@
 button.copyUrl{
     background-color: red;
     color: white;
+}
+
+.output-box{
+    width: 30%;
+    margin: auto;
+}
+.output-box button{
+    width: 100%;
+}
+.output-box p.shortened{
+    border: 1px solid #f5f5ff;
+    padding-bottom: calc(0.5em - 1px);
+    padding-top: calc(0.5em - 1px);
+    padding-left: 1em;
+    padding-right: 1em;
 }

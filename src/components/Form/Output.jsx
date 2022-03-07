@@ -41,7 +41,7 @@ const Output = ({ inputValue }) => {
     return <p className="has-text-weight-medium mt-5">Loading......</p>
   }
   if(err){
-    return <p>Something went wrong!</p>
+    return <p className="has-text-weight-medium mt-5">Something went wrong!</p>
   }
 
   console.log(generatedUrl);
@@ -49,12 +49,15 @@ const Output = ({ inputValue }) => {
   return (
     <> 
      {generatedUrl && (
-        <div className="form">
+        <div className="form mt-5">
+          <p>URL you pasted has been successfully shortened!</p>
+          <div className="output-box mt-5 is-flex is-align-items-center">
+          <p className="shortened">{generatedUrl}</p>
            <CopyToClipboard text={generatedUrl} onCopy={() => setCopyUrl(true)}>
-            <button className={copyUrl ? "copyUrl" : ""}>Copy new URL</button>
+            <button className={copyUrl ? "button is-danger " : "button is-light"}>{copyUrl ? <p>copied !</p> : <p>copy URL</p>}</button>
           </CopyToClipboard>
-          <p>{generatedUrl}</p>
-         
+          
+          </div>
         </div>
       )} 
 

@@ -7,11 +7,7 @@
     width: 30%;
 }
 
-.submit-button{
-    padding: 0.5rem 1rem;
-    background-color: black;
-    color: #fff;
-}
+
 
 /*output----------------------*/
 button.copyUrl{
@@ -24,12 +20,29 @@ button.copyUrl{
     margin: auto;
 }
 .output-box button{
-    width: 100%;
+    border-radius: 0;
+    width: 30%;
 }
 .output-box p.shortened{
-    border: 1px solid #f5f5ff;
+    border: 1px solid #363636;
     padding-bottom: calc(0.5em - 1px);
     padding-top: calc(0.5em - 1px);
     padding-left: 1em;
     padding-right: 1em;
+    width: 70%;
+}
+@media only screen and (max-width: 1024px){
+    .output-box{
+        width: 50%;
+    }
+
+}
+@media only screen and (max-width: 480px){
+    .input-area{
+        width: 80%;
+    }
+    .output-box{
+        width: 80%;
+
+    }
 }

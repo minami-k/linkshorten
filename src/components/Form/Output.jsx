@@ -54,7 +54,7 @@ const Output = ({ inputValue }) => {
           <div className="output-box mt-5 is-flex is-align-items-center">
           <p className="shortened">{generatedUrl}</p>
            <CopyToClipboard text={generatedUrl} onCopy={() => setCopyUrl(true)}>
-            <button className={copyUrl ? "button is-danger " : "button is-light"}>{copyUrl ? <p>copied !</p> : <p>copy URL</p>}</button>
+            <button className={copyUrl ? "button is-danger " : "button is-dark"}>{copyUrl ? <p>copied !</p> : <p>copy URL</p>}</button>
           </CopyToClipboard>
           
           </div>

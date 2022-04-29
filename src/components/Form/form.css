@@ -1,13 +1,22 @@
 .form{
     text-align: center;
 }
-
+.form h1{
+    font-family: 'Josefin Sans', sans-serif;
+}
 .input-area{
     margin: 1rem 0;
     width: 30%;
+    border: 3px solid #A6A6A6
 }
 
-
+.form button{
+    background-color: #000;
+    color: #fff !important;
+}
+.form button:hover{
+    color: #fff;
+}
 
 /*output----------------------*/
 button.copyUrl{
@@ -30,6 +39,9 @@ button.copyUrl{
     padding-left: 1em;
     padding-right: 1em;
     width: 70%;
+}
+.output-success{
+    font-family: 'Josefin Sans', sans-serif;
 }
 @media only screen and (max-width: 1024px){
     .output-box{

@@ -1,4 +1,22 @@
-.box-size{
-    width: 80%;
-    margin: auto;
+html {
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+.box-size {
+  width: 80%;
+  margin: auto;
+}
+.main-box {
+  position: relative;
+  height: 100vh;
+}
+.inside-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  width: 100%;
 }

@@ -50,11 +50,11 @@ const Output = ({ inputValue }) => {
     <> 
      {generatedUrl && (
         <div className="form mt-5">
-          <p>URL you pasted has been successfully shortened!</p>
+          <p className="output-success">URL you pasted has been successfully shortened!</p>
           <div className="output-box mt-5 is-flex is-align-items-center">
           <p className="shortened">{generatedUrl}</p>
            <CopyToClipboard text={generatedUrl} onCopy={() => setCopyUrl(true)}>
-            <button className={copyUrl ? "button is-danger " : "button is-dark"}>{copyUrl ? <p>copied !</p> : <p>copy URL</p>}</button>
+            <button className={copyUrl ? "button is-danger " : "button is-dark"}>{copyUrl ? <p>Copied !</p> : <p>Copy URL</p>}</button>
           </CopyToClipboard>
           
           </div>

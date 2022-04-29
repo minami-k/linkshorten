@@ -17,7 +17,7 @@ const Input = ({ setInputValue }) => {
     <div className="form">
       <h1 className="is-size-3 mt-5">Paste URL you wish to modify</h1>
       <form onSubmit={submitHandler}>
-        <div className="mt-4">
+        <div>
           <label className="is-size-5" style={{display:"none"}}>Shorten URL</label>
           <br />
           <input
@@ -25,10 +25,10 @@ const Input = ({ setInputValue }) => {
             value={inputUrl}
             placeholder="Paste URL here"
             onChange={changeHandler}
-            className="input-area input is-warning is-rounded is-focused "
+            className="input-area input is-rounded"
           />
         </div>
-        <button type="submit" className="button is-light mt-4 submit-btn">
+        <button type="submit" className="button mt-4 submit-btn">
           Shorten
         </button>
       </form>
